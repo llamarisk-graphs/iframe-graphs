@@ -14,7 +14,6 @@
            fetch('fill_times_data.json')
            .then(response => response.json())
            .then(data => {
-               const ctx = document.getElementById('barchart-fill-times').getContext('2d');
               const ctx = document.getElementById('barchart-fill-times').getContext('2d');
 
             // Sort data by timestamp
