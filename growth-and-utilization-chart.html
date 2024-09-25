@@ -21,7 +21,7 @@
 
         const ctx = canvas.getContext('2d');
 
-        fetch('../../js/gho-users/growth_and_utilization_data.json')
+        fetch('./growth_and_utilization_data.json')
             .then(response => response.json())
             .then(data => {
                 const userGrowthData = data.user_growth_rate.map(item => ({
